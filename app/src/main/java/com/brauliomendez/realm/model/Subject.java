@@ -8,15 +8,15 @@ import io.realm.RealmObject;
  */
 public class Subject extends RealmObject{
 
-    private Subject mId;
+    private String mId;
     private String mTeacher;
     private String mAssistant;
     private String mHour;
     private String mClassroom;
 
-    public Subject getId() { return mId; }
+    public String getId() { return mId; }
 
-    public void setId(Subject id) { this.mId = id; }
+    public void setId(String id) { this.mId = id; }
 
     public String getTeacher() { return mTeacher; }
 

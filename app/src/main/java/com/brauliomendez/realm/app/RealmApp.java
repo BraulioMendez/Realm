@@ -28,7 +28,7 @@ public class RealmApp extends Application {
         Realm.setDefaultConfiguration(mRealmConfiguration);
     }
 
-    private static RealmApp getInstance(){
+    public static RealmApp getInstance(){
         return mInstance;
     }
 }
