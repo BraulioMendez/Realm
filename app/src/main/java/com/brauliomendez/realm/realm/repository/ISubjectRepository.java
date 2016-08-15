@@ -10,7 +10,7 @@ import io.realm.RealmResults;
  */
 public interface ISubjectRepository {
 
-    interface onSaveSubjectCallback {
+    interface OnSaveSubjectCallback {
         void onSuccess();
 
         void onError(String message);
@@ -34,7 +34,7 @@ public interface ISubjectRepository {
         void onError(String message);
     }
 
-    void addSubject(Subject subject, onSaveSubjectCallback callback);
+    void addSubject(Subject subject, OnSaveSubjectCallback callback);
 
     void deleteSubjectById(String id, OnDeleteSubjectCallback callback);
 
